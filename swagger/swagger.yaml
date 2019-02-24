@@ -1,0 +1,212 @@
+swagger: "2.0"
+info:
+  description: "This is a sample brokerage company's accounts REST API ."
+  version: "1.0.0"
+  title: "Trade Server"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:8080"
+basePath: "/api/v1"
+tags:
+- name: "Trade Server"
+  description: "Trade Server details Api"
+schemes:
+- "http"
+paths:
+  /erase:
+    delete:
+      tags:
+      - "Trade Server"
+      summary: "Erasing all the trades"
+      description: "Erasing all the trades using /erase "
+      operationId: "deleteAllTrades"
+      consumes:
+      - "application/json"
+      responses:
+        200:
+          description: "success"
+  /trades:
+   post:
+      tags:
+      - "Trade Server"
+      summary: "Adding new trades"
+      description: "Adding new trades and passing required fields"
+      operationId: "createTrade"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "trade object that needs to be added to the db"
+        required: true
+        schema:
+          $ref: "#/definitions/addTrades"
+      responses:
+        201:
+          description: "Trade save successfully"
+        400:
+          description: "Bad Request"
+  /trades (Get All Trades):
+    get:
+      tags:
+      - "Trade Server"
+      summary: "Returning all the trades"
+      description: "no input  required"
+      operationId: "getAllTrades"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "success"
+          schema:
+           type: "array"
+           items:
+            $ref: "#/definitions/addTrades"
+  /trades/users/{userID}:
+    get:
+      tags:
+      - "Trade Server"
+      summary: "Returning the trade records filtered by the user ID"
+      description: "get the records based on userid"
+      operationId: "getTradesByUserid"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userID"
+        in: "path"
+        description: "ID of user trades to return"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "success"
+          schema:
+           type: "array"
+           items:
+            $ref: "#/definitions/addTrades"
+        404:
+          description: "User Trades not found"
+  /stocks/{stockSymbol}/trades:
+    get:
+      tags:
+      - "Trade Server"
+      summary: "Returning the trade records using stockSymbol with date range"
+      description: "Returning the trade records filtered by the stock symbol and trade type in the given date range"
+      operationId: "getTradesByStockSymbol"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "stockSymbol"
+        in: "path"
+        description: "stockSymbol of user trades to return"
+        required: true
+        type: "integer"
+      - name: "type"
+        in: "query"
+        description: "type of share"
+        type: "string"
+      - name: "start"
+        in: "query"
+        description: "start date"
+        type: "string"
+      - name: "end"
+        in: "query"
+        description: "end Date "
+        type: "string"
+      responses:
+        200:
+          description: "success"
+          schema:
+           type: "array"
+           items:
+            $ref: "#/definitions/addTrades"
+        404:
+          description: "There are no trades in the given date range"
+  /stocks/{stockSymbol}/price:
+    get:
+      tags:
+      - "Trade Server"
+      summary: "Returning the trade records using price and stockSymbol with date range"
+      description: "Returning the highest and lowest price for the stock symbol in the given date range"
+      operationId: "getTradesByprice"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "stockSymbol"
+        in: "path"
+        description: "stockSymbol of user trades to return"
+        required: true
+        type: "integer"
+      - name: "price"
+        in: "query"
+        description: "type of share"
+        type: "integer"
+      - name: "start"
+        in: "query"
+        description: "start date"
+        type: "string"
+      - name: "end"
+        in: "query"
+        description: "end Date "
+        type: "string"
+      responses:
+        200:
+          description: "success"
+          schema:
+           type: "array"
+           items:
+            $ref: "#/definitions/addTrades"
+        404:
+          description: "There are no trades in the given date range"
+definitions:
+ addTrades:
+    type: "object"
+    required:
+    - id
+    - type
+    - user
+    - symbol
+    - shares
+    - price
+    - timestamp
+    properties:
+      id:
+       type: "integer"
+      type:
+       type: "string"
+      user:
+       type: "object"
+       properties:
+         id:
+          type: "integer"
+         name:
+          type: "string"
+      symbol:
+       type: "string"
+      shares:
+       type: "integer"
+      price:
+       type: "integer"
+      timestamp:
+       type: "string"
+    example:
+      id: 100
+      type: 'buy'
+      user:
+          id: 101,
+          name: "sample"
+      symbol: "ASP.N"
+      shares: 28
+      price: 140.88
+      timestamp: "2019-01-06 22:22:22"
