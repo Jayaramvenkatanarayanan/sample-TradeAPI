@@ -67,14 +67,10 @@ npm start
 
 ## Running the tests
 
-<<<<<<< HEAD
-For run unit test.
-=======
-For run unit test  
->>>>>>> 4e9e333c8afbf6ae39dfb019a2e28889e800d4c4
+For run unit test
 
 ```
-npm test  
+npm test
 ```
 ![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
 
