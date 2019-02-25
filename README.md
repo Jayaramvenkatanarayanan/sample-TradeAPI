@@ -73,7 +73,7 @@ npm test
 
 ### Logs
 
-Using winton npm  to create logs. sample logs below
+Using winton npm  to create logs.
 ```
 {"message":"Method : create trades time 1550998042465  - success","level":"info"}
 {"message":"Method : create trades time 1550998042648  - success","level":"info"}
