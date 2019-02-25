@@ -1,10 +1,10 @@
 # Trade API
 
-A brokerage company's accounts and trading management platform. One requirement is for a REST API service to manage trades using the Nodejs Express framework with MongoDB
+A brokerage company's accounts and trading management platform. One requirement is for a REST API service to manage trades using the Nodejs Express framework with MongoDB.
 
 ## Getting Started
 
-Follwoing npm packages used to develope this project
+Follwoing npm packages used to develope this project.
 
 |NPM package    | Version       | Description   |
 | ------------- | ------------- |-------------- |
@@ -33,13 +33,13 @@ Follwoing npm packages used to develope this project
 
 ### Prerequisites
 
-please install node server in your local machine and mongoDB (version 4.0.2) for mongodb GUI tool install Robomongo and API test Insomina rest client
+please install node server in your local machine and mongoDB (version 4.0.2) for mongodb GUI tool install Robomongo and API test Insomina rest client.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development env running.
 
-install API server and swagger npm package  using below command ( inside apiserver and swagger folders)
+install API server and swagger npm package  using below command ( inside apiserver and swagger folders).
 
 ```
 npm i --save
@@ -47,31 +47,50 @@ npm i --save
 
 if you run npm port no and db config path and status code are all  get from .env file.
 
-```
+![image](https://user-images.githubusercontent.com/14818202/53307846-6624a800-38c2-11e9-9170-59cb47723da4.png)
 
-```
 
-To run development and swagger UI
+Run swagger UI for API Documentation.
 
 ```
 npm start
 ```
+![image](https://user-images.githubusercontent.com/14818202/53307880-b3a11500-38c2-11e9-8f14-0f4858cd395d.png)
+
+
+![swagger ui](https://user-images.githubusercontent.com/14818202/53307932-1c888d00-38c3-11e9-9bf3-c7d6ad24a494.png)
+
 
 ## Running the tests
 
-For run unit test
+For run unit test.
 
 ```
 npm test
 ```
+![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
+
 
 ### Code Patterns
 
-For Api  - MVC with Moduler Design Patterns
+For Api  - MVC with Moduler Design Patterns.
 
-For Swagger -  Moduler Design Patterns
+For Swagger -  Moduler Design Patterns.
 
-For Api unit Testing -  Moduler with AAA Design Patterns
+For Api unit Testing -  Moduler with AAA Design Patterns.
+
+
+## Design Documents
+
+Design documnets attached check below the filenames.
+
+|Document        | File Name     |
+| ------------- | ------------- |
+| Class Diagram | Class diagram.png        |
+| API Doc        | API workflow.docx         |
+| DB Model        |dataModel.png        |
+
+
 
 
 <!-- ### And coding style tests
