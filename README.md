@@ -45,6 +45,12 @@ install API server and swagger npm package  using below command ( inside apiserv
 npm i --save
 ```
 
+if you run npm port no and db config path and status code are all  get from .env file.
+
+```
+
+```
+
 To run development and swagger UI
 
 ```
