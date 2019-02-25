@@ -33,7 +33,7 @@ Follwoing npm packages used to develope this project.
 
 ### Prerequisites
 
-please install node server in your local machine and mongoDB (version 4.0.2) for mongodb GUI tool install Robomongo and API test Insomina rest client.
+please install node server  in your local machine and mongoDB (version 4.0.2) for mongodb GUI tool install Robomongo and API test Insomina rest client.
 
 ### Installing
 
@@ -70,6 +70,15 @@ npm test
 ```
 ![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
 
+
+### Logs
+
+Using winton npm  to create logs. sample logs below
+```
+{"message":"Method : create trades time 1550998042465  - success","level":"info"}
+{"message":"Method : create trades time 1550998042648  - success","level":"info"}
+{"message":"Method : create trades time 1551007326472  - success","level":"info"}
+```
 
 ### Code Patterns
 
