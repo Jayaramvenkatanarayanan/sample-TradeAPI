@@ -47,23 +47,29 @@ npm i --save
 
 if you run npm port no and db config path and status code are all  get from .env file.
 
-```
-![image](https://user-images.githubusercontent.com/14818202/53307846-6624a800-38c2-11e9-9170-59cb47723da4.png
-```
+![image](https://user-images.githubusercontent.com/14818202/53307846-6624a800-38c2-11e9-9170-59cb47723da4.png)
 
-To run development and swagger UI
+
+Run swagger UI for API Documentation
 
 ```
 npm start
 ```
+![image](https://user-images.githubusercontent.com/14818202/53307880-b3a11500-38c2-11e9-8f14-0f4858cd395d.png)
+
+
+![swagger ui](https://user-images.githubusercontent.com/14818202/53307932-1c888d00-38c3-11e9-9bf3-c7d6ad24a494.png)
+
 
 ## Running the tests
 
-For run unit test
+For run unit test  
 
 ```
-npm test
+npm test  
 ```
+![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
+
 
 ### Code Patterns
 
