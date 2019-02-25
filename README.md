@@ -68,7 +68,7 @@ For run unit test
 ```
 npm test
 ```
-![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
+![image](https://user-images.githubusercontent.com/14818202/53312983-5e263180-38dd-11e9-912c-46a23525c1f2.png)
 
 
 ### Logs
