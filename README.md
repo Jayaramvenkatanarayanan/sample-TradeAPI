@@ -48,7 +48,7 @@ npm i --save
 if you run npm port no and db config path and status code are all  get from .env file.
 
 ```
-
+![image](https://user-images.githubusercontent.com/14818202/53307846-6624a800-38c2-11e9-9170-59cb47723da4.png
 ```
 
 To run development and swagger UI
