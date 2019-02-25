@@ -50,7 +50,11 @@ if you run npm port no and db config path and status code are all  get from .env
 ![image](https://user-images.githubusercontent.com/14818202/53307846-6624a800-38c2-11e9-9170-59cb47723da4.png)
 
 
+<<<<<<< HEAD
 Run swagger UI for API Documentation.
+=======
+Run swagger UI for API Documentation
+>>>>>>> 4e9e333c8afbf6ae39dfb019a2e28889e800d4c4
 
 ```
 npm start
@@ -63,10 +67,14 @@ npm start
 
 ## Running the tests
 
+<<<<<<< HEAD
 For run unit test.
+=======
+For run unit test  
+>>>>>>> 4e9e333c8afbf6ae39dfb019a2e28889e800d4c4
 
 ```
-npm test
+npm test  
 ```
 ![image](https://user-images.githubusercontent.com/14818202/53307980-9a4c9880-38c3-11e9-9585-0ac8d20fab34.png)
 
